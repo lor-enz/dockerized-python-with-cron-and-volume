@@ -1,0 +1,6 @@
+# START CRON JOB
+# Be sure to save this as LF (Linux) and not CRLF (Windows) or it will not work
+
+# Runs /app/main.py every minute and writes output to /app/script.log
+* * * * * /usr/local/bin/python3 /app/main.py > /app/script.log 2>&1
+# END CRON JOB
